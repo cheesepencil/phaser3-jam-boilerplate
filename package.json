@@ -1,0 +1,19 @@
+{
+  "name": "phaser3-jam-boilerplate",
+  "version": "1.0.0",
+  "description": "A template for scaffolding simple or jam games with Phaser 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheesepencil/phaser3-jam-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheesepencil/phaser3-jam-boilerplate/issues"
+  },
+  "homepage": "https://github.com/cheesepencil/phaser3-jam-boilerplate#readme"
+}
