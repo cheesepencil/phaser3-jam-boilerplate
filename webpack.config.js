@@ -42,6 +42,18 @@ module.exports = {
         ],
       },
       {
+        test: /\.(xml)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'fonts',
+              name: '[name].[ext]'
+            }
+          }
+        ],
+      },
+      {
         test: /\.(wav)$/,
         use:[
           {

@@ -1,10 +1,13 @@
-export const gameConfig: Phaser.Types.Core.GameConfig = {
+import { BootScene } from './boot';
+import { PreloadScene } from './preload';
+
+export const PhaserGameConfig: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
     render: {
         antialias: false
     },
     scale: {
-        mode: Phaser.Scale.MAX_ZOOM
+        mode: Phaser.Scale.FIT
     },
     parent: 'game-parent',
     physics: {
@@ -15,5 +18,9 @@ export const gameConfig: Phaser.Types.Core.GameConfig = {
     },
     width: 256,
     height: 256,
-    scene: []
+    // use class def instead of instance when/if #4522 is resolved
+    scene: [
+        new BootScene(),
+        new PreloadScene()
+    ] 
 };
