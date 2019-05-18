@@ -14,6 +14,6 @@ export class PreloadScene extends Phaser.Scene {
     }
 
     create(): void {
-        // TODO: go to title screen
+        this.scene.start('TitleScene');
     }
 }
